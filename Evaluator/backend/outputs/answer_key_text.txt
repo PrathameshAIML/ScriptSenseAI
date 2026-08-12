@@ -1,0 +1,48 @@
+2 Define concurrency. Explain the need for concurrent execution. List and 10
+describe the various problems encountered due to concurrent execution with
+relevant examples.
+Definition : Concurrency refers to the simultaneous execution of two or
+more transactions in a database system such that their operations are
+interleaved over time, rather than executed one after another.
+Need for Concurrent Execution
+Concurrent execution of transactions is necessary for the following reasons:
+Improved Throughput
+Better Resource Utilization.
+Reduced Waiting Time
+Support for Multiuser Environment
+Lost Update Problem
+Description:
+Occurs when two transactions update the same data item and one update is
+lost due to overwriting by another transaction.
+Example:
+• T₁ reads account balance = 1000
+• T₂ reads account balance = 1000
+• T₁ updates balance to 900
+• T₂ updates balance to 1100
+Final balance becomes 1100, and T₁’s update is lost.
+Dirty Read (Uncommitted Dependency)
+Description:
+Occurs when a transaction reads data written by another transaction that has
+not yet committed.
+Example:
+• T₁ updates balance from 1000 to 800 (not committed)
+• T₂ reads balance as 800
+• T₁ rolls back
+T₂ has read invalid data.
+Unrepeatable Read
+Description:
+Occurs when a transaction reads the same data item twice and gets different
+values due to modification by another committed transaction.
+Example:
+T₁ reads balance = 1000
+T₂ updates balance to 1200 and commits
+T₁ reads balance again → 1200
+Same read produces different results.
+Incorrect Summary Problem
+Description:
+Occurs when a transaction computes an aggregate function while another
+transaction updates some of the involved data items.
+Example:
+• T₁ calculates total balance of all accounts
+• T₂ transfers money between two accounts during calculation
+Resulting sum is inconsistent.

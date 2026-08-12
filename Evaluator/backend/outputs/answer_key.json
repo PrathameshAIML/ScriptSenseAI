@@ -1,0 +1,46 @@
+{
+    "Q1": {
+        "max_marks": 5,
+        "model_answer": "Photosynthesis\nPhotosynthesis is the process by which green plants prepare their own food using\nsunlight.\nIt takes place in the chloroplast and requires chlorophyll, water, and carbon\ndioxide.\nThe process results in the formation of glucose and the release of oxygen.",
+        "keywords": [
+            "photosynthesis",
+            "process",
+            "carbon",
+            "chlorophyll",
+            "chloroplast"
+        ]
+    },
+    "Q2": {
+        "max_marks": 3,
+        "model_answer": "Ohm\u2019s Law\nOhm\u2019s Law states that the current flowing through a conductor is directly\nproportional\nto the voltage applied across it, provided the temperature remains constant.",
+        "keywords": [
+            "law",
+            "ohm",
+            "applied",
+            "conductor",
+            "constant"
+        ]
+    },
+    "Q3": {
+        "max_marks": 4,
+        "model_answer": "Database Normalization\nDatabase normalization is the process of organizing data in a database to reduce\nredundancy\nand improve data integrity. It involves dividing large tables into smaller tables\nand\ndefining relationships between them using keys.",
+        "keywords": [
+            "database",
+            "data",
+            "normalization",
+            "tables",
+            "defining"
+        ]
+    },
+    "Q4": {
+        "max_marks": 5,
+        "model_answer": "Machine Learning\nMachine learning is a branch of artificial intelligence that enables systems to\nlearn\nfrom data and improve performance without being explicitly programmed. It uses\nalgorithms\nto identify patterns and make predictions.",
+        "keywords": [
+            "learning",
+            "machine",
+            "algorithms",
+            "artificial",
+            "branch"
+        ]
+    }
+}
